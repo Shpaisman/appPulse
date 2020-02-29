@@ -1,0 +1,31 @@
+
+<ion-header>
+  <div text-center>
+  <ion-navbar color="primary">
+    <ion-title>Crie sua conta</ion-title>
+  
+  </ion-navbar>
+  </div>
+</ion-header>
+
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>E-mail</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+  
+ 
+  
+  <ion-item>
+    <ion-label floating>senha</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+  
+  <button ion-button full style="margin-top:25px" (click)="register(user)">Cadastro</button>
+  
+  
+  
+</ion-content>
